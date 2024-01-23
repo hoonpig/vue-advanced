@@ -27,7 +27,7 @@ export const router = new VueRouter({
         },
         {
             path:'/jobs'
-            , component : JobsVie
+            , component : JobsView
         },
         {
             path:'/user',

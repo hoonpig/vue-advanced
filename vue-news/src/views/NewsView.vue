@@ -15,7 +15,10 @@ export default {
   },
   created(){
     fetchNewsList()
-      .then(response => this.newsArr = response.data)
+      .then(response => {
+        console.log(this);
+        this.newsArr = response.data
+      })
       .catch(function (error){
         console.log(error);
       })
@@ -24,5 +27,4 @@ export default {
 </script>
 
 <style>
-
 </style>
